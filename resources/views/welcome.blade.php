@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
   </head>
   <body>
+    <livewire:todo.form.new-form />
     <div class="contaner">
         <div class="row">
             <div class="col-md-2"></div>

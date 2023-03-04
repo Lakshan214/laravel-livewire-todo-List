@@ -8,10 +8,6 @@ class NewForm extends Component
 {
     public function render()
     {
-        return <<<'blade'
-            <div>
-                {{-- A good traveler has no fixed plans and is not intent upon arriving. --}}
-            </div>
-        blade;
+        return view('livewre.Components.forme');
     }
 }
