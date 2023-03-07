@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',[HomeController::class,'view']);
+ Route::get('/',[HomeController::class,'view']);
 
 
 Route::prefix('/task')->group (function(){

@@ -22,8 +22,9 @@ class HomeController extends Controller
 
     public function view(){
 
-        $response['task'] = $this->task->all();
-        return view('welcome')->with( $response);
+       
+
+        return view('welcome');
 
     }
 
