@@ -8,15 +8,9 @@ use App\Models\Todo;
 class NewTable extends Component
 {
 
-      
-    public function mount()
-    {
-        $task= Todo::all();
-        return view('welcome',compact('task'));
-       
-    }
+  
     public function render()
-    {
-        return view('livewre.table');
+    {    $task= Todo::all();
+        return view('livewre.table',compact('task'));
     }
 }

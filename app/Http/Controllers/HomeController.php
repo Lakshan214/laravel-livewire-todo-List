@@ -29,12 +29,12 @@ class HomeController extends Controller
     }
 
 
-    public function save(Request $request)
-    {
-        $this->task-> create($request->all());
+    // public function save(Request $request)
+    // {
+    //     $this->task-> create($request->all());
 
-        return redirect()->back();
-    }
+    //     return redirect()->back();
+    // }
 
 
 

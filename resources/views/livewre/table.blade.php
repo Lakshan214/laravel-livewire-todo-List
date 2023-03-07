@@ -15,7 +15,7 @@
        
       <tr>
         <th >{{++$key}}</th>
-        <td>{{$task->name}}</td>
+        <td>{{$task->Name}}</td>
         <td>{{$task->price}}</td>
         <td>
             <a href="" class="btn btn-success "><i class="las la-edit"></i></a>
