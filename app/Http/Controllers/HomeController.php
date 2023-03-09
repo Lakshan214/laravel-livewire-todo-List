@@ -29,13 +29,21 @@ class HomeController extends Controller
     }
 
 
-    // public function save(Request $request)
-    // {
-    //     $this->task-> create($request->all());
+    public function save(Request $request)
+    {
+        $this->task-> create($request->all());
 
-    //     return redirect()->back();
-    // }
+        return redirect()->back();
+    }
+   
+    public function delete($task_id)
+    {
+        $task=Todo::find($task_id);
 
+        $task->delete();
+
+        return redirect()->back();
+    }
 
 
 

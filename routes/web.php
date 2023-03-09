@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Livewire\Todo\Form\NewForm;
+use App\Http\Livewire\Todo\Table\NewTable;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,11 +17,12 @@ use Illuminate\Support\Facades\Route;
 */
 
  Route::get('/',[HomeController::class,'view']);
+ Route::get('Todo,Table', NewTable::class);
 
 
 Route::prefix('/task')->group (function(){
-    // Route::post('/save',[HomeController::class,'save'])->name('task.save'); 
-    Route::get('/{task_id}/delete',[HomeController::class,'delete'])->name('task.delete'); 
+    Route::post('/save',[HomeController::class,'save'])->name('task.save'); 
+    Route::get('/{task_id}/delete',[NewTable::class,'delete'])->name('task.delete'); 
     // Route::get('/{task_id}/update',[HomeController::class,'update'])->name('task.update'); 
 
 });

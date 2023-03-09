@@ -3,7 +3,7 @@
   
   <!-- Modal -->
   <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
-    <form wire:model="submit"  >
+    <form action="{{route('task.save')}}" method="POST" >
         @csrf
     <div class="modal-dialog">
       <div class="modal-content">
@@ -17,11 +17,11 @@
             </div>
             <div class="form-group">
                 <label for="name">Product name</label>
-                <input type="text" class="form-control" name="name" id="name"placeholder="Product Name" wire:model="task.name">
+                <input type="text" class="form-control" name="name" id="name"placeholder="Product Name" wire:model="name">
             </div>
             <div class="form-group mt-2">
                 <label for="name">Product price</label>
-                <input type="number" class="form-control" name="price" id="price" placeholder="Product Prce"wire:model="task.price">
+                <input type="number" class="form-control" name="price" id="price" placeholder="Product Prce"wire:model="price">
             </div>
         </div>
         <div class="modal-footer">

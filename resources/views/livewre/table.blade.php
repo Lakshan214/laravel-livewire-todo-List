@@ -18,8 +18,9 @@
         <td>{{$task->Name}}</td>
         <td>{{$task->price}}</td>
         <td>
-            <a href="" class="btn btn-success "><i class="las la-edit"></i></a>
-            <a href="" class="btn btn-danger"><i class="las la-trash"></i></a>
+            <a class="btn btn-success "><i class="las la-edit"></i></a>
+              <a href="{{route('task.delete',$task->id)}}" class="btn btn-danger"><i class="las la-trash"></i></a>
+              {{-- <button wire:click="delete({{$task->id}})" class="btn btn-danger"><i class="las la-trash"></i></a> --}}
         </td>
       </tr>
 
